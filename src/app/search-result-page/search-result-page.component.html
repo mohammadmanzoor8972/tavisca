@@ -1,0 +1,5 @@
+<h2>Search Result Page</h2>
+<app-search-widget (searchHotelEvent)="searchHotel($event)" ></app-search-widget>
+<div *ngFor="let hotel of hotelResult.hotels">
+<app-search-hotel-item [hotelItem]="hotel" ></app-search-hotel-item>
+</div>

@@ -1,0 +1,23 @@
+<form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+
+  <div class="row">
+    <div class="form-group col-md-12">
+      <label for="exampleInputEmail1">Where are you going ?</label>
+      <input type="text" class="form-control" required  ngModel name="location" placeholder="Enter Location">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="exampleInputEmail1">Check-In</label>
+      <input type="date" class="form-control"  required name="checkin"  ngModel placeholder="dd/mm/yyyy">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="exampleInputEmail1">Check-Out</label>
+      <input type="date" class="form-control"  required name="checkout"  ngModel placeholder="dd/mm/yyyy">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="exampleInputEmail1">Guest</label>
+      <input type="number" class="form-control"  required name="guest"  ngModel placeholder="guest">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Search for Hotels</button>
+</form>

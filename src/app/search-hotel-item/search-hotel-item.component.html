@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+     <div class="row">
+       <div class="col-md-2">
+         <img src="https://hitchedinir.hitched.co.in/Suppliers/850_500_thumb_36619_jw-marriott-201602161116249452453.jpg"/>
+       </div>
+       <div class="col-sm-6 ">
+         <h4>{{hotelItem.name}}</h4>
+         <p>{{hotelItem?.contact?.address?.line1}}</p>
+       </div>
+       <div class="col-md-2 showroom ">
+         <p>from</p>
+         <h3>${{hotelItem?.fare?.baseFare}}</h3> <span>/night</span>
+         <p>Total : ${{hotelItem?.fare?.totalFare}}</p>
+         <button class="btn btn-warning">Show rooms</button>
+       </div>
+     </div>
+    </div>
+  </div>
